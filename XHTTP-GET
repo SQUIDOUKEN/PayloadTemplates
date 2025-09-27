@@ -1,0 +1,5 @@
+var xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+}
+xhttp.open("GET", "/a?username=a&password=a");
+xhttp.send();
