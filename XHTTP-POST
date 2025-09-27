@@ -1,0 +1,6 @@
+var xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+}
+xhttp.open("POST", "/1");
+xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+xhttp.send("username=1&password=1");
